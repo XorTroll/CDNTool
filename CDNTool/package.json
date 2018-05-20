@@ -1,0 +1,11 @@
+{
+	"name": "CDNTool",
+	"description": "3DS titles seeker and downloader",
+	"version": "0.2",
+	"author": "XorTroll",
+	"main": "CDNTool.js",
+	"dependencies":
+	{
+		"electron": "^1.8.4"
+	}
+}

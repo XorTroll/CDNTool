@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CDNTool</title>
+		<link rel="stylesheet" href="Material/Styles/Swatches.css"/>
+		<link rel="stylesheet" href="Styles/CDNTool.css"/>
+		<link rel="stylesheet" href="Material/Styles/Icons.css"/>
+		<script src="Scripts/Application.js"></script>
+		<script src="Scripts/Common.js"></script>
+		<script src="Material/Scripts/Common.js"></script>
+		<script src="Material/Scripts/Common.Min.js"></script>
+	</head>
+	<body>
+		<div class="mdl-layout mdl-js-layout mdl-shadow--3dp c_Bar"></div>
+		<button id="ib_Menu" class="c_ibtn_Menu mdl-button mdl-js-button mdl-button--icon">
+			<i class="material-icons">menu</i>
+		</button>
+		<ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="ib_Menu">
+			<li class="mdl-menu__item" onclick="WinMinimize()">Minimize</li>
+  			<li class="mdl-menu__item" onclick="WinResize()">Resize</li>
+  			<li class="mdl-menu__item mdl-menu__item--full-bleed-divider" onclick="WinClose()">Close</li>
+			<li id="mnu_btn_Reload" class="mdl-menu__item" onclick="AccessTitles()">Reload</li>
+			<li id="mnu_btn_Reload" class="mdl-menu__item" onclick="AboutInfo()">About</li>
+		</ul>
+		<h4 id="Text_Title" class="c_Text_Title">CDNTool</h4>
+		<img id="Image" class="c_Image_Logo" src="Graphics/Logo.ico" alt="Cart">
+		<button id="btn_Search" onclick="SearchTitles()" class="c_Button c_btn_Search mdl-button mdl-js-button mdl-button--raised">Search</button>
+		<input id="tbx_Input" class="Input-text" placeholder="Any 3DS app, program..." type="text"/>
+		<div class="c_Section_Table">
+			<table id="Table" class="c_Table mdl-data-table mdl-js-data-table mdl-shadow--1dp">
+				<tbody id="b_Table" class="c_b_Table"></tbody>
+			</table>
+		</div>
+		
+		<div id="Card_TitleInfo" class="c_Card_TitleInfo mdl-Card mdl-shadow--3dp">
+			<label id="Card_Text_Info" class="c_Card_Text_Info"></label>
+			<button id="Card_but_Download" class=" c_Card_but_Download c_Button mdl-button mdl-js-button mdl-button--raised" onclick="TitleDownload()">Download</button>
+		</div>
+		<label id="Text_Log" class="c_Text_Log">Ready to search!</label>
+	</body>
+</html>
